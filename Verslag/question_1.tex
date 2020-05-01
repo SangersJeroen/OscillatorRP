@@ -1,0 +1,122 @@
+\section{question 1}
+
+Equation \ref{eq_diff} is a second order linear differential equation. According to theorem 3.6.1 in Boyce \cite{Boyce}:
+
+\begin{equation}
+	x(t) = c_1 y_1(t) + c_2 y_2(t) + Y(t)
+\end{equation}
+
+\begin{equation}
+	\label{eq_particular}
+	Y(t) = - y_1(t)\int_{t0}^t \frac{y_2(s) F(s)}{W[y_1,y_2](s)}ds + y_2(t)\int_{t0}^t \frac{y_1(s) F(s)}{W[y_1,y_2](s)}ds
+\end{equation}
+
+With $W[y_1,y_2]$, the Wronskian as defined as in section 3.2 in Boyce \cite{boyce}, $t0$ an arbitrary conveniently chosen point  and $y(t)$, the independent solutions solutions for the homogeneous differential equation:
+
+\begin{equation}
+	\label{eq_diff_homo}
+	\ddot{y}(t) + \frac{\omega}{Q} \dot{y}(t) + \omega^2 y(t) = 0
+\end{equation}
+
+We first solve $y(t)$ by seeing that, for constant values of $\omega$,$m$ and $Q$, a solution for equation \ref{eq_diff_homo} is  $y(t) = e^(r \; t)$. Appliyng to equation \ref{eq_diff_homo} yields:
+
+\begin{equation}
+	\label{eq_characteristic}
+	(r^2 + \frac{\omega}{Q} r + \omega^2) y(t) = 0
+\end{equation}
+
+\begin{equation*}
+	r^2 + \frac{\omega}{Q} r + \omega^2 = 0
+\end{equation*}
+
+We find two solutions for r:
+
+\begin{equation*}
+	r_1 = \frac{-\frac{\omega}{Q} + \sqrt{\left( \frac{\omega}{Q} \right)^2 -4 \omega^2}}{2}
+\end{equation*}
+
+\begin{equation*}
+	r_2 = \frac{-\frac{\omega}{Q} + \sqrt{\left( \frac{\omega}{Q} \right)^2 -4 \omega^2}}{2}
+\end{equation*}
+
+We use this to define:
+
+\begin{equation*}
+y_1(t) = e^{r_1 t}
+\end{equation*}
+\begin{equation*}
+y_2(t) = e^{r_2 t}
+\end{equation*}
+
+If we solve equation \ref{eq_particular} for the obtained values of $y_1(t)$ and $y_2(t)$, we get the following:
+
+\begin{equation}
+	
+\end{equation}
+
+With $c_1$ and $c_2$ two constant variables that depend on the boundary values. \\
+Using the definition of 
+For solving $x$, we will use the method of variation of parameters. Therefore, $c_1$ and $c_2$ are changed for time dependent functions $u_1(t)$ and $u_2(t)$;
+
+\begin{equation*}
+	x = u_1(t) \: y_1(t) + u_2(t) \: y_2(t)
+\end{equation*}
+
+Differentiating with respect to $t$ yields:
+
+\begin{equation*}
+	\dot{x}  = u_1(t) \: r_1 \: y_1(t) + u_2(t) \: r_2 \: y_2(t) + \dot{u}_1(t) \: y_1(t) + \dot{u}_2(t) \: y_2(t)
+\end{equation*}
+
+Since there are two unknown functions $u_1(t)$ and $u_2(t)$ and only one equation to solve those. We may impose an extra condition on $u_1(t)$ and $u_2(t)$. If we require that:
+
+\begin{equation}
+	\label{eq_condition}
+	\dot{u}_1(t) \: y_1(t) + \dot{u}_2(t) \: y_2(t) = 0 
+\end{equation}
+
+The equation for $\dot{x}$ reduces to:
+
+\begin{equation*}
+	\dot{x}  = u_1(t) \: r_1 \: y_1(t) + u_2(t) \: r_2 \: y_2(t) 
+\end{equation*}
+
+The second derivative of $x$ with respect to $t$ reads:
+
+\begin{equation*}
+	\ddot{x}  = u_1(t) \: r_1^2 \: y_1(t) + u_2(t) \: r_2^2 \: y_2(t) + \dot{u}_1(t) \: r_1 \: y_1(t) + \dot{u}_2(t) \: r_2 \: y_2(t)
+\end{equation*}
+
+If we now use these results in equation \ref{eq_diff} we get the following:
+
+\begin{equation*}
+	m \big[ u_1(t) \: r_1^2 \: y_1(t) + u_2(t) \: r_2^2 \: y_2(t) + \dot{u}_1(t) \: r_1 \: y_1(t) + \dot{u}_2(t) \: r_2 \: y_2(t) \big] + \frac{\omega \: m}{Q} \big[ u_1(t) \: r_1 \: y_1(t) + u_2(t) \: r_2 \: y_2(t) \big] + m \: \omega^2 \big[u_1(t) \: y_1(t) + u_2(t) \: y_2(t) \big]
+\end{equation*}
+	
+\begin{equation*}
+	u_1(t) \: m \big( \: r_1^2 + \frac{\omega \: m}{Q} r_1 +\omega^2 \big) y_1(t) + u_2(t) \: m \big( \: r_2^2 + \frac{\omega \: m}{Q} r_2 +\omega^2 \big) y_2(t) + \dot{u}_1(t) \: r_1 \: y_1(t) + \dot{u}_2(t) \: r_2 \: y_1(t) = F(t)
+\end{equation*}
+
+Using equation \ref{eq_characteristic} reduces the latter equation to:
+
+\begin{equation*}
+	 \dot{u}_1(t) \: r_1 \: y_1(t) + \dot{u}_2(t) \: r_2 \: y_1(t) = F(t)
+\end{equation*}
+
+We can solve this using equation \ref{eq_condition}:
+
+\begin{equation*}
+	\dot{u}_2(t) =  - \dot{u}_1(t) \: \frac{y_1(t)}{y_2(t)} 
+\end{equation*}
+
+Therefore we find:
+
+\begin{equation*}
+	\dot{u}_1(t) = F(t)
+\end{equation*}
+
+
+
+
+
+
