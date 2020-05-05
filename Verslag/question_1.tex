@@ -1,0 +1,73 @@
+\section{question 1}
+
+We want to solve the following equation for $F(t) = F_0 cos(\omega t)$:
+
+\begin{equation}
+	\label{eq_diff}
+	m \ddot{x}(t) + m \frac{\omega}{Q} \dot{x}(t) + m \omega^2 x(t) = F(t)
+\end{equation}
+Equation \ref{eq_diff} is a second order linear differential equation. According to theorem 3.5.2 in Boyce \cite{Boyce}:
+\begin{equation}
+	\label{eq_x_1_emtpy}
+	x(t) = c_1 y_1(t) + c_2 y_2(t) + Y(t)
+\end{equation}
+
+With $Y(t)$, any solution to the nonhomogeneous differential equation and with $y_1(t)$ and $y_2(t)$ that form a fundamental set of solutions to the homogeneous differential equation.
+\begin{equation}
+	\label{eq_diff_homo}
+	\ddot{y}(t) + \frac{\omega}{Q} \dot{y}(t) + \omega^2 y(t) = 0
+\end{equation}
+
+We first solve $y(t)$ by seeing that, for constant values of $\omega$,$m$ and $Q$, a solution for equation \ref{eq_diff_homo} is  $y(t) = e^{r \: t}$. Applying to equation \ref{eq_diff_homo} yields:
+\begin{equation}
+	\label{eq_characteristic}
+	(r^2 + \frac{\omega}{Q} r + \omega^2) y(t) = 0 \; \; \Rightarrow \; \; r^2 + \frac{\omega}{Q} r + \omega^2 = 0
+\end{equation}
+
+We find two solutions for r:
+\begin{equation*}
+	r_1 = \frac{-1}{2} \left( \frac{\omega}{Q} + \sqrt{\left( \frac{\omega}{Q} \right)^2 -4 \omega^2} \right) \; \; , \; \; r_2 = \frac{1}{2} \left( -\frac{\omega}{Q} + \sqrt{\left( \frac{\omega}{Q} \right)^2 -4 \omega^2} \right)
+\end{equation*}
+
+We use this to define:
+\begin{equation*}
+y_1(t) = e^{r_1 t} \; \; , \; \; y_2(t) = e^{r_2 t}
+\end{equation*}
+
+$r_1$ and $r_2$ will be complex numbers for $\mid Q \mid > \frac{1}{2}$ meaning that differential equation \ref{eq_diff} will lead to a (damped) oscillator. Just as expected.\\
+\\
+The method to find $Y(t)$ is the method of undetermined coefficients described in section 3.5 of Boyce \cite{boyce}.\\
+We assume the $Y(t)$ is of the shape:
+
+\begin{equation*}
+	Y(t) = a_1 cos(\omega t) + a_2 sin(\omega t)
+\end{equation*}
+
+We find $a_1 = 0$ and $a_2 = \frac{F_0 Q}{\omega^2 m}$ (see appendix). Therefore we find:
+
+\begin{equation*}
+	x(t) = c_1 y_1(t) + c_2 y_2(t) + \frac{F_0 Q}{\omega^2 m}sin(\omega t)
+\end{equation*}
+
+By imposing the initial conditions on the latter result (see appendix) we obtain:
+
+\begin{align*}
+	c_1 = \frac{1}{r_2-r_1} \left( -\dot{x}_0 + \frac{F_0 Q}{\omega m} + x_0 (2\:r_2 -r_1) \right)
+\end{align*}
+\begin{align*}
+	c_2 = \frac{1}{r_2-r_1} \left( \dot{x}_0 - \frac{F_0 Q}{\omega m} - x_0 r_2 \right) \\
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
