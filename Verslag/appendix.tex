@@ -1,0 +1,74 @@
+\section{Appendix}
+
+\subsection{Question 1}
+
+\subsubsection{Solving $Y(t)$}
+In order to solve the particular solution to the differential equation we assume $Y(t)$ is of the shape:
+
+\begin{equation*}
+	Y(t) = a_1 cos(\omega t) + a_2 sin(\omega t)
+\end{equation*}
+
+Differentiating with respect to $t$ once and twice yields:
+
+\begin{equation*}
+	\dot{Y}(t) = - a_1 \omega \: sin(\omega t) + a_2 \omega \: cos(\omega t)
+\end{equation*}
+\begin{equation*}
+	\ddot{Y}(t) = - a_1 \omega^2 \: cos(\omega t) - a_2 \omega^2 \: sin(\omega t)
+\end{equation*}
+
+
+If we substitute this for $x(t)$ in equation \ref{eq_diff} and with $F(t) = F_0 \: cos(\omega t)$ we find:
+
+\begin{align*}
+	F(t)m  &= \ddot{x}(t) + m \frac{\omega}{Q} \dot{x}(t) + m \omega^2 x(t)  \\
+	F_0 \:cos(\omega t) &= m \left[ - a_1 \omega^2 \:cos(\omega t) - a_2 \omega^2 \:sin(\omega t) \right] + m \frac{\omega}{Q} \left[- a_1 \omega \:sin(\omega t) + a_2 \omega \:cos(\omega t) \right] + m \omega^2 \left[ a_1 \:cos(\omega t) + a_2 \:sin(\omega t)\right] \\
+	F_0 \:cos(\omega t) &= omega^2 m \:cos(\omega t) \left(a_1 + \frac{a_2}{Q} - a_1 \right) + \omega^2 m \:sin(\omega t) \left( a_2 - \frac{a_1}{Q} - a_2 \right) \\
+	F_0 \:cos(\omega t) &= a_2 \frac{\omega^2 m}{Q} \:cos(\omega t) - a_1 \frac{\omega^2 m}{Q} \:sin( \omega t) \\	
+\end{align*}
+
+From this follows:
+
+\begin{align*}
+	- a_1 \frac{\omega^2 m}{Q} = 0 &  &  a_2 \frac{\omega^2 m}{Q} = F_0 \\
+	a_1 = 0 &  & a_2 = \frac{F_0 Q}{\omega^2 m}
+\end{align*}
+	
+Therefore the solution to differential equation \ref{eq_diff} is:
+
+\begin{equation*}
+	x(t) = c_1 e^{r_1 t} + c_2 e^{r_2 t} + \frac{F_0 Q}{\omega^2 m}sin(\omega t)
+\end{equation*}
+
+We can find $c_1$ and $c_2$ by imposing the initial conditions on the latter equation:
+
+\begin{align*}
+	x(0) = x_0 = c_1 + c_2 \\
+	c_1 = x_0 - c_2
+\end{align*}
+
+\begin{align*}
+	\dot{x}(t) = c_1 r_1 e^{r_1 t} + c_2 r_2 e^{r_2 t} + \frac{F_0 Q}{\omega m} cos(\omega t) \\
+	\dot{x}(0) = \dot{x}_0 = c_1 r_1 + c_2 r_2 + \frac{F_0 Q}{\omega m} \\
+	\dot{x}_0 = [x_0-c_2] r_1 + c_2 r_2 + \frac{F_0 Q}{\omega m} \\
+	c_2(r_2 - r_1) = \dot{x}_0 - \frac{F_0 Q}{\omega m} -x_0 r_1 \\	
+	c_2 = \frac{1}{r_2-r_1} \left( \dot{x}_0 - \frac{F_0 Q}{\omega m} - x_0 r_2 \right) 
+\end{align*}
+
+We substitute this back into the equation for $c_1$:
+\begin{align*}
+	c_1 &= x_0 - c_2 \\	
+	&= x_0 - \frac{1}{r_2-r_1} \left( \dot{x}_0 - \frac{F_0 Q}{\omega m} - x_0 r_2 \right) \\
+	&= \frac{1}{r_2-r_1} \left( -\dot{x}_0 + \frac{F_0 Q}{\omega m} + x_0 (2 \: r_2 -r_1) \right)
+\end{align*}
+
+
+
+
+
+
+
+
+
+

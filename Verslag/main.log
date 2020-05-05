@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  1 MAY 2020 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  5 MAY 2020 14:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -1332,54 +1332,41 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 
 ] (question_1.tex
 
-LaTeX Warning: Reference `eq_diff' on page 2 undefined on input line 3.
+LaTeX Warning: Citation `Boyce' on page 2 undefined on input line 9.
 
 
-LaTeX Warning: Citation `Boyce' on page 2 undefined on input line 3.
+LaTeX Warning: Citation `boyce' on page 2 undefined on input line 39.
 
 
-LaTeX Warning: Citation `boyce' on page 2 undefined on input line 7.
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
-
-LaTeX Warning: Reference `eq_diff' on page 2 undefined on input line 86.
-
-
-Overfull \hbox (66.37769pt too wide) detected at line 90
-\OML/cmm/m/it/10 m[]u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OM
-L/cmm/m/it/10 r[] y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OM
-L/cmm/m/it/10 u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/
-m/it/10 r[] y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + [](\OML/c
-mm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 r[] y[]\OT1/cmr/m/n/10 (\OML/cmm
-/m/it/10 t\OT1/cmr/m/n/10 ) + [](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/m
-/it/10 r[] y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )[] + [][]\OML
-/cmm/m/it/10 u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/m
-/it/10 r[] y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OML/cmm/m
-/it/10 u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10
- r[] y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )[] + \OML/cmm/m/it/
-10 m ![][]u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/m/it
-/10 y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 
-u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 y[]\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )[]
  []
 
-[2]) [3] (question_2.tex) [4] (question_3.tex) [5] (conclusion.tex) [6]
+) [2] (question_2.tex) [3] (question_3.tex) [4] (conclusion.tex) [5]
 No file main.bbl.
-(main.aux)
+(appendix.tex
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 3.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 3.
+
+Overfull \hbox (50.98438pt too wide) detected at line 29
+[]
+ []
+
+[6]) [7] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 20402 strings out of 480934
- 385718 string characters out of 2899917
- 624379 words of memory out of 3000000
+ 20405 strings out of 480934
+ 385840 string characters out of 2899917
+ 625371 words of memory out of 3000000
  35855 multiletter control sequences out of 15000+200000
- 573722 words of font info for 46 fonts, out of 3000000 for 9000
+ 586361 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,6n,74p,904b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,10n,74p,904b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/xcharter/xc
 h_uy5hgr.enc}<C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/xcharter/XCharter-Bold.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9
@@ -1392,9 +1379,9 @@ fonts/cm/cmr10.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmr5.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/vanlo/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (8 pages, 179402 bytes).
+Output written on main.pdf (9 pages, 186412 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
