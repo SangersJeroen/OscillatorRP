@@ -5,11 +5,12 @@ Created on Tue May  5 14:05:39 2020
 @author: vanlo
 """
 
-plt.clf()
+
 
 import numpy as np
 import matplotlib.pyplot as plt
-import math
+
+plt.clf()
 
 w = 1.0 + 0*1j
 Q = np.array([1+0*1j,1e10+0*1j, -1.0+0*1j])
