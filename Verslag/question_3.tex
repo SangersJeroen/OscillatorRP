@@ -1,5 +1,5 @@
 \section{question 3}
-We want to solve equation \ref{eq:to_solve} when a modulated external force is applied, this force follows from equation \ref{eg:force_q3}.
+We want to solve equation \ref{eq:to_solve} when a amplitude modulated external force is applied, this force follows from equation \ref{eq:force_q3}.\\
 
 \begin{equation}
     m \ddot{x}(t)+m\frac{\omega}{Q}\dot{x}(t)+m \omega^2 x(t) = F(t)
@@ -7,6 +7,54 @@ We want to solve equation \ref{eq:to_solve} when a modulated external force is a
 \end{equation}
 
 \begin{equation}
-    F(t)
+    F(t) = F_0 t\frac{T-t}{T^2}= F_0 \frac{t}{T} - F_0 \frac{t^2}{T^2}
     \label{eq:force_q3}
+\end{equation}
+
+Since this equation \ref{eq:force_q3} is relatively simple, it can be solved using the method of undetermined coefficients as outlined in paragraph 3.5 of Boyce \cite{Boyce}.\\ The homogenous form has already been solved in the previous questions, the resulting roots are shown below in equation \ref{eq:solution_roots} and the solution in \ref{eq:solution_y_with_roots}.\\
+
+\begin{equation}
+    r_1 = -1/2 \biggl( \frac{\omega}{Q}+\sqrt{\frac{\omega^2}{Q^2}-4 \omega^2} \biggr), r_2 = 1/2 \biggl( -\frac{\omega}{Q}+\sqrt{\frac{\omega^2}{Q^2}-4 \omega^2} \biggr)
+    \label{eq:solution_roots}
+\end{equation}
+
+\begin{equation}
+    y_1(t) = e^{r_1 t},  y_2(t) = e^{r_2 t}
+    \label{eq:solution_y_with_roots}
+\end{equation}
+
+Now for the particular solution $y_p(t)$ we use the aforementioned method, the derivation is show below. We start by assuming that $y_p(t)$ is of the shape:\\
+
+\begin{equation*}
+    y_p(t) = c_1 + c_2 \cdot t + c_3 \cdot t^2
+\end{equation*}
+
+If we then differentiate $y_p(t)$ two times and substitute the result into equation \ref{eq:to_solve} we get the following:
+
+\begin{equation*}
+    y_p'(t) = c_2 + 2c_3 \cdot t,    y_p"(t) = 2c_3
+\end{equation*}
+
+\begin{align*}
+    m y"(t)+ \frac{m \omega}{Q} y'(t) + m \omega^2 y(t) &= F_0 \frac{t}{T} -F_0 \frac{t^2}{T^2}\\
+    m (2a_3) + \frac{m \omega}{Q} (a_2 +2a_3 t) + m \omega^2 (a_1 + a_2 t + a_3t^2) &= F_0 \frac{t}{T} -F_0 \frac{t^2}{T^2}
+\end{align*}
+
+If we then equate the terms in front of the functions and it's derivatives we get the following:\\
+\begin{align*}
+    m\omega^2 a_1 + \frac{m \omega a_2}{Q} + 2ma_3 &= 0\\
+    m \omega^2 a_2 + \frac{2m\omega a_3}{Q} &= \frac{F_0}{T}\\
+    m \omega^2 a_3 &= -\frac{F_0}{T^2}
+\end{align*}
+
+Solving the system of equations and substituting back into $y_p(t)$ yields:
+
+\begin{align*}
+    a_1 &= \frac{F_0 ( 2Q^2 -Q T\omega -2)}{mQ^2 T^2 \omega^4}\\
+    a_2 &= \frac{F_0 ( QT\omega +2)}{mQT^2\omega^3}\\
+    a_3 &= \frac{-F_0}{mT^2 \omega^2}
+\end{align*}
+
+\begin{equation}
+    y_p(t)=\frac{F_0 t}{mT\omega^2}(1-t/T)+\frac{F_0}{mQT\omega^3}\biggl[\frac{2(t+Q)}{T}-\frac{2}{QT\omega}-1\biggr]
 \end{equation}
