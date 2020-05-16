@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  11 MAY 2020 11:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  16 MAY 2020 15:09
 entering extended mode
 **./main.tex
 (main.tex
@@ -1342,7 +1342,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-) [2] (question_2.tex) [3] (question_3.tex) [4] (conclusion.tex) [5]
+<figures/graph_q1.png, id=18, 867.24pt x 433.62pt>
+File: figures/graph_q1.png Graphic file (type png)
+<use figures/graph_q1.png>
+Package pdftex.def Info: figures/graph_q1.png  used on input line 65.
+(pdftex.def)             Requested size: 273.14923pt x 136.57117pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2]) [3 <./figures/graph_q1.png>] (question_2.tex
+<figures/graph_q2.png, id=32, 1011.78pt x 578.16pt>
+File: figures/graph_q2.png Graphic file (type png)
+<use figures/graph_q2.png>
+Package pdftex.def Info: figures/graph_q2.png  used on input line 7.
+(pdftex.def)             Requested size: 273.14923pt x 156.08763pt.
+) [4 <./figures/graph_q2.png>] (question_3.tex) [5] (conclusion.tex) [6]
 No file main.bbl.
 (appendix.tex
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
@@ -1354,19 +1368,22 @@ Overfull \hbox (50.98438pt too wide) detected at line 29
 []
  []
 
-[6]) [7] (main.aux)
+[7]) [8] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 20405 strings out of 480934
- 385840 string characters out of 2899917
- 625371 words of memory out of 3000000
- 35855 multiletter control sequences out of 15000+200000
+ 20433 strings out of 480934
+ 386307 string characters out of 2899917
+ 625379 words of memory out of 3000000
+ 35879 multiletter control sequences out of 15000+200000
  586361 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,10n,74p,904b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,10n,79p,904b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/xcharter/xc
 h_uy5hgr.enc}<C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/xcharter/XCharter-Bold.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9
@@ -1379,9 +1396,9 @@ fonts/cm/cmr10.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmr5.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/vanlo/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (9 pages, 186412 bytes).
+Output written on main.pdf (10 pages, 406175 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
