@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  16 MAY 2020 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  16 MAY 2020 19:28
 entering extended mode
 **c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
 (c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
@@ -1476,32 +1476,48 @@ File: TS1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for TS1/XCharter
 LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 26.
 
-Overfull \hbox (12.76065pt too wide) in paragraph at lines 42--43
+Overfull \hbox (12.76065pt too wide) in paragraph at lines 40--41
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-)) [7] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\conclusion.tex) [8] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.bbl) [9] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\appendix.tex
+)
+
+Package caption Warning: \label without proper reference on input line 108.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:Q3' on page 7 undefined on input line 103.
+
+<figures/Q3_omega_q_plot.png, id=46, 722.7pt x 722.7pt>
+File: figures/Q3_omega_q_plot.png Graphic file (type png)
+<use figures/Q3_omega_q_plot.png>
+Package pdftex.def Info: figures/Q3_omega_q_plot.png  used on input line 107.
+(pdftex.def)             Requested size: 318.66948pt x 318.67268pt.
+) [7] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\conclusion.tex) [8 <c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/figures/Q3_omega_q_plot.png>] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.bbl) [9] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\appendix.tex
 Overfull \hbox (50.98438pt too wide) detected at line 29
 []
  []
 
 [10]) [11] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.aux)
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30838 strings out of 492449
- 572538 string characters out of 3129676
+ 30846 strings out of 492449
+ 572750 string characters out of 3129676
  755665 words of memory out of 3000000
- 34728 multiletter control sequences out of 15000+200000
+ 34735 multiletter control sequences out of 15000+200000
  593396 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,10n,79p,952b,1887s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_q7u3cc.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (13 pages, 473365 bytes).
+Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (13 pages, 705177 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
