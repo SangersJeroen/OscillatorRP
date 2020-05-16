@@ -27,6 +27,13 @@ def force(t):
     else:
         return 0
 
+def array_force(time):
+    force_array = F_naught*time*(T-time)/(T**2)
+    for i in range(0,len(time)):
+        if time[i] > T:
+            force_array[i] = 0
+    return force_array
+
 
 def system(t , func_array):
     u_prime = func_array[1]
@@ -42,5 +49,6 @@ solution = solve(system, (0,tmax), [0,0], t_eval=time)
                     |        \ The timespace in which system needs evaluating.
                      \ The system defining our system of first order ODE's
 """
-plt.plot(solution.t,solution.y[0])
+plt.plot(solution.t,solution.y[0], label='solution')
+plt.plot(time, array_force(time))
 plt.show()
