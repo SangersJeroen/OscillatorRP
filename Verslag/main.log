@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  15 MAY 2020 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  16 MAY 2020 15:44
 entering extended mode
 **c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
 (c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
@@ -1394,51 +1394,103 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--42
  []
 
 ) [2] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\question_2.tex) [3] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\question_3.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-) [4] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\conclusion.tex) [5] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.bbl
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 101.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) (../Python/ode_solver.py
+
+LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
+(Font)              using `T1/cmtt/m/n' instead on input line 1.
+
+
+Overfull \hbox (4.54807pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][] 
+ []
+
+[5
+
+]
+Overfull \hbox (17.14511pt too wide) in paragraph at lines 26--28
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)) [6] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\conclusion.tex) [7] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.bbl
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 4.
-) [6] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\appendix.tex
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 3.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 3.
-
+) [8] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\appendix.tex
 Overfull \hbox (50.98438pt too wide) detected at line 29
 []
  []
 
-[7]) [8] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.aux) ) 
+[9]) [10] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 30331 strings out of 492449
- 567198 string characters out of 3129676
- 611459 words of memory out of 3000000
- 34240 multiletter control sequences out of 15000+200000
- 592723 words of font info for 51 fonts, out of 3000000 for 9000
+ 30811 strings out of 492449
+ 572065 string characters out of 3129676
+ 794129 words of memory out of 3000000
+ 34705 multiletter control sequences out of 15000+200000
+ 593351 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,10n,73p,952b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (10 pages, 241932 bytes).
+ 76i,10n,76p,952b,1896s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfit1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (12 pages, 300369 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
