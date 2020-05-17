@@ -1,4 +1,5 @@
 \section{question 3}
+\subsection{Analytical method}
 We want to solve equation \ref{eq:to_solve} when a amplitude modulated external force is applied, this force follows from equation \ref{eq:force_q3}.\\
 
 \begin{equation}
@@ -58,3 +59,52 @@ Solving the system of equations and substituting back into $y_p(t)$ yields:
 \begin{equation}
     y_p(t)=\frac{F_0 t}{mT\omega^2}(1-t/T)+\frac{F_0}{mQT\omega^3}\biggl[\frac{2(t+Q)}{T}-\frac{2}{QT\omega}-1\biggr]
 \end{equation}
+\clearpage
+\subsection{Numerical method}
+To solve equation \ref{eq:to_solve} numerically we first have to split the second order differential equations into a system of two first order equations. We do this by substituting two new time dependant functions for $y$, namely $u(t)$ and $v(t)$ equal to $y(t)$ and $y'(t)$ respectively. We can then derive the following system:\\
+
+\begin{equation*}
+    \left\{ \begin{matrix} \mbox{u(t) = y(t)}\\
+    \mbox{v(t) = y'(t)} \end{matrix} \right.
+\end{equation*}
+
+So that their derivatives become:\\
+
+\begin{equation*}
+    \left\{ \begin{matrix} \mbox{u'(t) = y'(t) = v(t)}\\
+    \mbox{v'(t) = y"(t)} \end{matrix} \right.
+\end{equation*}
+
+If we then substitute in these equations into the second order differential equation we get the following system:\\
+
+\begin{align*}
+    u'(t) &= y'(t) = v(t)\\
+    v'(t) &= y''(t)\\
+    F(t) &= m y''(t)+m\frac{\omega}{Q}y'(t)+m \omega^2 y(t)\\
+\end{align*}
+
+\begin{align*}
+    v'(t) &= y''(t) = 1/m \cdot F(t) - \omega/Q\cdot y'(t)-\omega^2\cdot y(t)\\
+    v'(t) &= 1/m\cdot F(t) - \omega/Q\cdot v(t)-\omega^2\cdot u(t)
+\end{align*}
+
+So that we now have the following system of of first-order linear differential equations:\\
+
+\begin{align}
+    v'(t) &= 1/m\cdot F(t)-\omega/Q\cdot v(t)- \omega^2\cdot u(t)\\
+    u'(t) &= v(t)
+\end{align}
+
+This system can be easily solved numerically using the following python code:\\
+
+
+\lstinputlisting[language=Python]{../Python/ode_solver.py}
+
+We can then use a similar program to plot the nine different scenarios, these are shown in figure \ref{fig:Q3}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.7\linewidth,keepaspectratio]{figures/Q3_omega_q_plot.png}
+    \label{fig:Q3}
+    \caption{The resulting oscillations for a parabolic force modulation. }
+\end{figure}
