@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  17 MAY 2020 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  17 MAY 2020 16:20
 entering extended mode
 **c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
 (c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
@@ -1399,15 +1399,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
 
-<figures/graph_q1.png, id=18, 867.24pt x 433.62pt>
+[2]
+<figures/graph_q1.png, id=26, 867.24pt x 433.62pt>
 File: figures/graph_q1.png Graphic file (type png)
 <use figures/graph_q1.png>
-Package pdftex.def Info: figures/graph_q1.png  used on input line 66.
+Package pdftex.def Info: figures/graph_q1.png  used on input line 67.
 (pdftex.def)             Requested size: 273.14923pt x 136.57117pt.
+) [3
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2]) [3 <c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/figures/graph_q1.png>] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\question_2.tex
+ <c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/figures/graph_q1.png>] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\question_2.tex
 <figures/graph_q2.png, id=32, 1011.78pt x 578.16pt>
 File: figures/graph_q2.png Graphic file (type png)
 <use figures/graph_q2.png>
@@ -1443,20 +1443,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-<figures/Q3_omega_q_plot.png, id=41, 722.7pt x 722.7pt>
+[6]
+<figures/Q3_omega_q_plot.png, id=45, 722.7pt x 722.7pt>
 File: figures/Q3_omega_q_plot.png Graphic file (type png)
 <use figures/Q3_omega_q_plot.png>
-Package pdftex.def Info: figures/Q3_omega_q_plot.png  used on input line 52.
+Package pdftex.def Info: figures/Q3_omega_q_plot.png  used on input line 53.
 (pdftex.def)             Requested size: 318.66948pt x 318.67268pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 )
-Underfull \hbox (badness 10000) in paragraph at lines 57--52
+Underfull \hbox (badness 10000) in paragraph at lines 58--52
 
  []
 
-[6] [7 <c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/figures/Q3_omega_q_plot.png>] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\conclusion.tex) [8] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.bbl
+[7 <c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/figures/Q3_omega_q_plot.png>] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\conclusion.tex) [8] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.bbl
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 4.
 ) [9] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\appendix.tex
@@ -1515,7 +1513,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  76i,14n,79p,952b,1578s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_q7u3cc.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (14 pages, 705537 bytes).
+Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (14 pages, 706636 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
