@@ -9,7 +9,7 @@ Created on Mon May 11 11:27:33 2020
 
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.ticker import ScalarFormatter as scalarformatter
+
 
 plt.close('all')
 
@@ -21,7 +21,7 @@ m = 1.0 +0*1j
 
 t_1 = 0
 t_2_q1 = [10,10,10]
-t_2_q2 = np.array([[3,3,3],[5,5,5],[5,5,5]])
+t_2_q2 = np.array([[3.5,3.5,3.5],[5,5,5],[7,7,7]])
 N = int(1e3)
 
 
@@ -158,15 +158,15 @@ for i in range(len(T)):
 
 ax[0,0].set_yticks([0, 0.0005, 0.001])
 ax[0,2].set_yscale('symlog')
-ax[0,2].set_yticks([-1e3, -1e1, 0, 1e1, 1e3])
+ax[0,2].set_yticks([-1e6,-1e3, 0, 1e3, 1e6])
 
 
 ax[1,0].set_yticks([0,0.004, 0.008])
 ax[1,2].set_yscale('symlog')
-ax[1,2].set_yticks([-1e3, -1e1, 0, 1e1, 1e3])
+ax[1,2].set_yticks([-1e6,-1e3, 0, 1e3, 1e6])
 
 ax[2,2].set_yscale('symlog')
-ax[2,2].set_yticks([-1e4, -1e2, 0, 1e2, 1e4])
+ax[2,2].set_yticks([-1e6,-1e3, 0, 1e3, 1e6])
 
 plt.tight_layout()
 plt.savefig(r'C:\Users\vanlo\Documents\GitHub\OscillatorRP\Verslag\figures\graph_q2.png', dpi=100)
