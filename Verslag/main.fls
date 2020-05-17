@@ -226,6 +226,8 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\comment\comment.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\comment\comment.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
@@ -329,6 +331,11 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\public\xcharter\XCharter-Bold-tlf-t1.
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Bold-tlf-t1--base.tfm
 INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\introduction.tex
 INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\introduction.tex
+INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\figures\pendulum.png
+INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\figures\pendulum.png
+INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\figures\pendulum.png
+INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\figures\pendulum.png
+INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\figures\pendulum.png
 INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\question_1.tex
 INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\question_1.tex
 INPUT c:\Users\Gebruiker\Documents\OscillatorRP\Verslag\figures\graph_q1.png
