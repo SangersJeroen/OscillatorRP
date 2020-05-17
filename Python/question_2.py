@@ -98,7 +98,7 @@ fig.set_size_inches(12, 6)
 ax[-1].set_xlabel(' ', color=(0, 0, 0, 0))
 ax[-1].set_ylabel('\n ', color=(0, 0, 0, 0))
 #
-fig.text(0.55, 0.04, '$t  \; \; [rad/2 \pi] \; \; \; \u2192$', va='center', ha='center')
+fig.text(0.55, 0.04, '$\omega \cdot t  \; \; [rad/2 \pi] \; \; \; \u2192$', va='center', ha='center')
 fig.text(0.02, 0.5, '$x \; [m] \; \; \; \u2192 $', va='center', ha='center', rotation='vertical')
 
 for i in range(len(Q)):
@@ -132,7 +132,7 @@ fig, ax = plt.subplots(3,3,gridspec_kw={'width_ratios': [1.5,2,2]}, sharex='col'
 fig.set_size_inches(14, 8)
 
 
-fig.text(0.55, 0.04, '$t  \; \; [rad/2 \pi] \; \; \; \u2192$', va='center', ha='center')
+fig.text(0.55, 0.04, '$\omega \cdot t  \; \; [rad/2 \pi] \; \; \; \u2192$', va='center', ha='center')
 fig.text(0.2, 0.93, '$Q = 1$', va='center', ha='center')
 fig.text(0.5, 0.93, '$Q \; \u2192 \; \infty $', va='center', ha='center')
 fig.text(0.83, 0.93, '$Q = -1$', va='center', ha='center')
