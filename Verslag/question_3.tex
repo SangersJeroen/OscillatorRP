@@ -1,5 +1,4 @@
 \section{question 3}
-\subsection{Analytical method}
 We want to solve equation \ref{eq:to_solve} when a amplitude modulated external force is applied, this force follows from equation \ref{eq:force_q3}.\\
 
 \begin{equation}
@@ -12,55 +11,6 @@ We want to solve equation \ref{eq:to_solve} when a amplitude modulated external 
     \label{eq:force_q3}
 \end{equation}
 
-Since this equation \ref{eq:force_q3} is relatively simple, it can be solved using the method of undetermined coefficients as outlined in paragraph 3.5 of Boyce \cite{Boyce}.\\ The homogenous form has already been solved in the previous questions, the resulting roots are shown below in equation \ref{eq:solution_roots} and the solution in \ref{eq:solution_y_with_roots}.\\
-
-\begin{equation}
-    r_1 = -1/2 \biggl( \frac{\omega}{Q}+\sqrt{\frac{\omega^2}{Q^2}-4 \omega^2} \biggr), r_2 = 1/2 \biggl( -\frac{\omega}{Q}+\sqrt{\frac{\omega^2}{Q^2}-4 \omega^2} \biggr)
-    \label{eq:solution_roots}
-\end{equation}
-
-\begin{equation}
-    y_1(t) = e^{r_1 t},  y_2(t) = e^{r_2 t}
-    \label{eq:solution_y_with_roots}
-\end{equation}
-
-Now for the particular solution $y_p(t)$ we use the aforementioned method, the derivation is show below. We start by assuming that $y_p(t)$ is of the shape:\\
-
-\begin{equation*}
-    y_p(t) = c_1 + c_2 \cdot t + c_3 \cdot t^2
-\end{equation*}
-
-If we then differentiate $y_p(t)$ two times and substitute the result into equation \ref{eq:to_solve} we get the following:
-
-\begin{equation*}
-    y_p'(t) = c_2 + 2c_3 \cdot t,    y_p"(t) = 2c_3
-\end{equation*}
-
-\begin{align*}
-    m y"(t)+ \frac{m \omega}{Q} y'(t) + m \omega^2 y(t) &= F_0 \frac{t}{T} -F_0 \frac{t^2}{T^2}\\
-    m (2a_3) + \frac{m \omega}{Q} (a_2 +2a_3 t) + m \omega^2 (a_1 + a_2 t + a_3t^2) &= F_0 \frac{t}{T} -F_0 \frac{t^2}{T^2}
-\end{align*}
-
-If we then equate the terms in front of the functions and it's derivatives we get the following:\\
-\begin{align*}
-    m\omega^2 a_1 + \frac{m \omega a_2}{Q} + 2ma_3 &= 0\\
-    m \omega^2 a_2 + \frac{2m\omega a_3}{Q} &= \frac{F_0}{T}\\
-    m \omega^2 a_3 &= -\frac{F_0}{T^2}
-\end{align*}
-
-Solving the system of equations and substituting back into $y_p(t)$ yields:
-
-\begin{align*}
-    a_1 &= \frac{F_0 ( 2Q^2 -Q T\omega -2)}{mQ^2 T^2 \omega^4}\\
-    a_2 &= \frac{F_0 ( QT\omega +2)}{mQT^2\omega^3}\\
-    a_3 &= \frac{-F_0}{mT^2 \omega^2}
-\end{align*}
-
-\begin{equation}
-    y_p(t)=\frac{F_0 t}{mT\omega^2}(1-t/T)+\frac{F_0}{mQT\omega^3}\biggl[\frac{2(t+Q)}{T}-\frac{2}{QT\omega}-1\biggr]
-\end{equation}
-\clearpage
-\subsection{Numerical method}
 To solve equation \ref{eq:to_solve} numerically we first have to split the second order differential equations into a system of two first order equations. We do this by substituting two new time dependant functions for $y$, namely $u(t)$ and $v(t)$ equal to $y(t)$ and $y'(t)$ respectively. We can then derive the following system:\\
 
 \begin{equation*}
@@ -96,15 +46,17 @@ So that we now have the following system of of first-order linear differential e
 \end{align}
 
 This system can be easily solved numerically using the python code shown in the appendix section \ref{PythonCode}. We can then use a similar program to plot the nine different scenarios, these are shown in figure \ref{fig:fig_Q3}.\\
+\newpage
 
-\begin{figure}[h!]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=.7\linewidth,keepaspectratio]{figures/Q3_omega_q_plot.png}
-    \caption{The resulting oscillations for a parabolic force modulation. }
+    \caption{The resulting oscillations for a parabolic force modulation. Here the displacement of the mass is plotted as a solid line and the force is plotted as the dashed line. The force is the same in all graphs but is scaled to emphasise the form. }
     \label{fig:fig_Q3}
 \end{figure}
 
 When looking at the graph we can see the different values of $\omega T$ plotted in rows and the different values of $Q$ in columns, all plots share the same time domain but only plots on the same row and in the first and second column share displacement axis.\\
 The different values of $\omega T$ make noticeable differences in the graphs, the smallest value $\omega T = 0.1$ acts a lot like an impulse function, applying a short but strong force to set de oscillator into motion. We can see that for different quality factors the system reacts differently, for a normal friction force the system gradually returns to the equilibrium position, for $Q = \infty$ there is no friction force and the system start oscillating forever and looks like it had a starting velocity due to the short impulse force, for the quality factor of $Q = -1$ the friction force actually puts more energy into the system causing it to spiral out of control.
 For the higher values of $\omega T$ we can see that the force is no longer representative of an impulse, meaning that the acceleration is not instantaneous, in the graph this can be seen by the small curve at the start of the plots where the oscillating mass needs to gain energy first. The different quality factors have the same effect as before.
-The other noticeable effect is that in the bottom middle graph for $Q=\infty$ and $\omega T = 10$ we can see that the duration of the force applied is to long, at about 7 seconds the force starts to work against the oscillation thus having the adverse to the intended effect of a driving force. This effect can also be seen though less noticeably so with the graph to the left where the force is also pushing the mass away from equilibrium while the mass is already moving towards the equilibrium position.\\
+The other noticeable effect is that in the bottom middle graph for $Q=\infty$ and $\omega T = 10$ we can see that the duration of the force applied is to long, at about 7 seconds the force starts to work against the oscillation thus having the adverse to the intended effect of a driving force. This effect can also be seen though less noticeably so with the graph to the left where the force is also pushing the mass away from equilibrium while the mass is already moving towards the equilibrium position.
+It is clear from the plots that for this type of modulation the ringdown is shorter than the previous modulation methods thus it is easier to transfer more signals using this method.\\
