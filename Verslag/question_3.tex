@@ -95,16 +95,16 @@ So that we now have the following system of of first-order linear differential e
     u'(t) &= v(t)
 \end{align}
 
-This system can be easily solved numerically using the following python code:\\
+This system can be easily solved numerically using the python code shown in the appendix section \ref{PythonCode}. We can then use a similar program to plot the nine different scenarios, these are shown in figure \ref{fig:fig_Q3}.\\
 
-
-\lstinputlisting[language=Python]{../Python/ode_solver.py}
-
-We can then use a similar program to plot the nine different scenarios, these are shown in figure \ref{fig:Q3}.
-
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \includegraphics[width=.7\linewidth,keepaspectratio]{figures/Q3_omega_q_plot.png}
-    \label{fig:Q3}
     \caption{The resulting oscillations for a parabolic force modulation. }
+    \label{fig:fig_Q3}
 \end{figure}
+
+When looking at the graph we can see the different values of $\omega T$ plotted in rows and the different values of $Q$ in columns, all plots share the same time domain but only plots on the same row and in the first and second column share displacement axis.\\
+The different values of $\omega T$ make noticeable differences in the graphs, the smallest value $\omega T = 0.1$ acts a lot like an impulse function, applying a short but strong force to set de oscillator into motion. We can see that for different quality factors the system reacts differently, for a normal friction force the system gradually returns to the equilibrium position, for $Q = \infty$ there is not friction force and the system start oscillating forever and looks like it had a starting velocity due to the short impulse force, for the quality factor of $Q = -1$ the friction force actually puts more energy into the system causing it to spiral out of control.
+For the higher values of $\omega T$ we can see that the force is no longer representative of an impulse, meaning that the acceleration is not instantaneous, in the graph this can be seen by the small curve at the start of the plots where the oscillating mass needs to gain energy first. The different quality factors have the same effect as before.
+The other noticeable effect is that in the bottom middle graph for $Q=\infty$ and $\omega T = 10$ we can see that the duration of the force applied is to long, at about 7 seconds the force starts to work against the oscillation thus having the adverse to the intended effect of a driving force. This effect can also be seen though less noticeably so with the graph to the left where the force is also pushing the mass away from equilibrium while the mass is already moving towards the equilibrium position.\\
