@@ -99,7 +99,7 @@ ax[-1].set_xlabel(' ', color=(0, 0, 0, 0))
 ax[-1].set_ylabel('\n ', color=(0, 0, 0, 0))
 #
 fig.text(0.55, 0.04, '$\omega \cdot t  \; \; [rad/2 \pi] \; \; \; \u2192$', va='center', ha='center')
-fig.text(0.02, 0.5, '$x \; [m] \; \; \; \u2192 $', va='center', ha='center', rotation='vertical')
+fig.text(0.02, 0.5, '$Displacement \; [m] \; \; \; \u2192 $', va='center', ha='center', rotation='vertical')
 
 for i in range(len(Q)):
     ax[i].plot(t_q1[i,:],x_1[i,:])
@@ -131,17 +131,18 @@ plt.show()
 fig, ax = plt.subplots(3,3,gridspec_kw={'width_ratios': [1.5,2,2]}, sharex='col')
 fig.set_size_inches(14, 8)
 
+ax[0,0].set_title('$Q = 1  $ \n')
+ax[0,1].set_title('$Q \; \u2192 \; \infty  $ \n ')
+ax[0,2].set_title('$Q = -1  $ \n ')
 
-fig.text(0.55, 0.04, '$\omega \cdot t  \; \; [rad/2 \pi] \; \; \; \u2192$', va='center', ha='center')
-fig.text(0.2, 0.93, '$Q = 1$', va='center', ha='center')
-fig.text(0.5, 0.93, '$Q \; \u2192 \; \infty $', va='center', ha='center')
-fig.text(0.83, 0.93, '$Q = -1$', va='center', ha='center')
+ax[0,0].set_ylabel('\n \n $\omega T = 0.1$')
+ax[1,0].set_ylabel('\n \n $\omega T = 1$ \n ')
+ax[2,0].set_ylabel('\n \n $\omega T = 10$')
 
-fig.text(0.09, 0.45, '$x \; [m] \; \; \; \u2192 $', va='center', ha='center', rotation='vertical')
-fig.text(0.06, 0.78, '$\omega T = 0.1$', va='center', ha='center')
-fig.text(0.05, 0.5, '$\omega T = 1$', va='center', ha='center')
-fig.text(0.06, 0.22, '$\omega T = 10$', va='center', ha='center')
+ax[2,1].set_xlabel('$\omega \cdot t  \; \; [rad/2 \pi]$')
 
+
+fig.text(0.02, 0.45, '$Displacement \; [m] $', va='center', ha='center', rotation='vertical')
 
 for i in range(len(T)):
     for j in range(len(Q)):
@@ -151,9 +152,9 @@ for i in range(len(T)):
         ax[i,j].yaxis.major.formatter._useMathText = True
         ax[i,j].margins(x=0)
         
-        ax[i,0].set_ylabel('\n \n \n \n  \n \n ', color=(0, 0, 0, 0))
-        ax[2,i].set_xlabel(' \n  \n  ', color=(0, 0, 0, 0))
-        ax[0,i].set_title(' \n \n \n \n  ', color=(0, 0, 0, 0))
+#        ax[i,0].set_ylabel('\n \n \n \n  \n \n ', color=(0, 0, 0, 0))
+#        ax[2,i].set_xlabel(' \n  \n  ', color=(0, 0, 0, 0))
+#        ax[0,i].set_title(' \n \n \n \n  ', color=(0, 0, 0, 0))
 
 
 ax[0,0].set_yticks([0, 0.0005, 0.001])
