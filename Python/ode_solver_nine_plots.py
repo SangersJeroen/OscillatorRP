@@ -61,8 +61,8 @@ Q=1
 wT = 0.1
 T = wT/freq
 solution = solve(system, (0,tmax), [0,0], t_eval=time)
-plt.plot(solution.t,solution.y[0], label=r'$y(t)$')
-plt.plot(time, array_force(time), label=r"$F(t)$", linestyle=":")
+plt.plot(solution.t/(2*np.pi),solution.y[0], label=r'$y(t)$')
+plt.plot(time/(2*np.pi), array_force(time)*0.05, label=r"$F(t)$", linestyle=":")
 plt.setp(ax1.get_xticklabels(), visible=False)
 plt.ylim([-0.02,0.02])
 plt.ylabel(r"$\omega T = 0.1$")
@@ -73,8 +73,8 @@ Q = np.inf
 wT = 0.1
 T = wT/freq
 solution = solve(system, (0,tmax), [0,0], t_eval=time)
-plt.plot(solution.t,solution.y[0], label=r'$y(t)$')
-plt.plot(time, array_force(time), label=r"$F(t)$", linestyle=":")
+plt.plot(solution.t/(2*np.pi),solution.y[0], label=r'$y(t)$')
+plt.plot(time/(2*np.pi), array_force(time)*0.05, label=r"$F(t)$", linestyle=":")
 plt.setp(ax2.get_xticklabels(), visible=False)
 plt.setp(ax2.get_yticklabels(), visible=False)
 plt.ylim([-0.02,0.02])
@@ -85,8 +85,8 @@ Q = -1
 wT = 0.1
 T = wT/freq
 solution = solve(system, (0,tmax), [0,0], t_eval=time)
-plt.plot(solution.t,solution.y[0], label=r'$y(t)$')
-plt.plot(time, array_force(time), label=r"$F(t)$", linestyle=":")
+plt.plot(solution.t/(2*np.pi),solution.y[0], label=r'$y(t)$')
+plt.plot(time/(2*np.pi), array_force(time)*1e2, label=r"$F(t)$", linestyle=":")
 plt.setp(ax3.get_xticklabels(), visible=False)
 #plt.ylim([-10,10])
 ax3.set_yscale('symlog')
@@ -97,20 +97,20 @@ Q=1
 wT = 1
 T = wT/freq
 solution = solve(system, (0,tmax), [0,0], t_eval=time)
-plt.plot(solution.t,solution.y[0], label=r'$y(t)$')
-plt.plot(time, array_force(time), label=r"$F(t)$", linestyle=":")
+plt.plot(solution.t/(2*np.pi),solution.y[0], label=r'$y(t)$')
+plt.plot(time/(2*np.pi), array_force(time)*0.5, label=r"$F(t)$", linestyle=":")
 plt.setp(ax4.get_xticklabels(), visible=False)
 plt.ylim([-0.2,0.2])
 plt.ylabel(r"$\omega T = 1$")
-ax1.text(-10,-0.06, r"Displacement [$m$]", rotation='vertical')
+ax1.text(-3.14/2,-0.06, r"Displacement [$m$]", rotation='vertical')
 
 ax5 = plt.subplot(335, sharex=ax1)
 Q = np.inf
 wT = 1
 T = wT/freq
 solution = solve(system, (0,tmax), [0,0], t_eval=time)
-plt.plot(solution.t,solution.y[0], label=r'$y(t)$')
-plt.plot(time, array_force(time), label=r"$F(t)$", linestyle=":")
+plt.plot(solution.t/(2*np.pi),solution.y[0], label=r'$y(t)$')
+plt.plot(time/(2*np.pi), array_force(time)*0.5, label=r"$F(t)$", linestyle=":")
 plt.setp(ax5.get_xticklabels(), visible=False)
 plt.setp(ax5.get_yticklabels(), visible=False)
 plt.ylim([-0.2,0.2])
@@ -120,8 +120,8 @@ Q = -1
 wT = 1
 T = wT/freq
 solution = solve(system, (0,tmax), [0,0], t_eval=time)
-plt.plot(solution.t,solution.y[0], label=r'$y(t)$')
-plt.plot(time, array_force(time), label=r"$F(t)$", linestyle=":")
+plt.plot(solution.t/(2*np.pi),solution.y[0], label=r'$y(t)$')
+plt.plot(time/(2*np.pi), array_force(time)*1e2, label=r"$F(t)$", linestyle=":")
 plt.setp(ax6.get_xticklabels(), visible=False)
 #plt.ylim([-10,10])
 ax6.set_yscale('symlog')
@@ -132,8 +132,8 @@ Q=1
 wT = 10
 T = wT/freq
 solution = solve(system, (0,tmax), [0,0], t_eval=time)
-plt.plot(solution.t,solution.y[0], label=r'$y(t)$')
-plt.plot(time, array_force(time), label=r"$F(t)$", linestyle=":")
+plt.plot(solution.t/(2*np.pi),solution.y[0], label=r'$y(t)$')
+plt.plot(time/(2*np.pi), array_force(time), label=r"$F(t)$", linestyle=":")
 plt.ylim([-0.2,0.5])
 plt.ylabel(r"$\omega T = 10$")
 
@@ -142,19 +142,19 @@ Q = np.inf
 wT = 10
 T = wT/freq
 solution = solve(system, (0,tmax), [0,0], t_eval=time)
-plt.plot(solution.t,solution.y[0], label=r'$y(t)$')
-plt.plot(time, array_force(time), label=r"$F(t)$", linestyle=":")
+plt.plot(solution.t/(2*np.pi),solution.y[0], label=r'$y(t)$')
+plt.plot(time/(2*np.pi), array_force(time), label=r"$F(t)$", linestyle=":")
 plt.setp(ax8.get_yticklabels(), visible=False)
 plt.ylim([-0.2,0.5])
-plt.xlabel(r"Time [$s$]")
+plt.xlabel(r"$\omega t$ [$rad/{2 \pi}$]")
 
 ax9 = plt.subplot(339, sharex=ax1)
 Q = -1
 wT = 10
 T = wT/freq
 solution = solve(system, (0,tmax), [0,0], t_eval=time)
-plt.plot(solution.t,solution.y[0], label=r'$y(t)$')
-plt.plot(time, array_force(time), label=r"$F(t)$", linestyle=":")
+plt.plot(solution.t/(2*np.pi),solution.y[0], label=r'$y(t)$')
+plt.plot(time/(2*np.pi), array_force(time)*1e2, label=r"$F(t)$", linestyle=":")
 #plt.ylim([-10,10])
 ax9.set_yscale('symlog')
 ax9.set_yticks([-1e3, 0, 1e3])
