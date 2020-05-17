@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  16 MAY 2020 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  17 MAY 2020 13:42
 entering extended mode
 **c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
 (c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
@@ -1411,9 +1411,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/graph_q2.png, id=32, 1011.78pt x 578.16pt>
 File: figures/graph_q2.png Graphic file (type png)
 <use figures/graph_q2.png>
-Package pdftex.def Info: figures/graph_q2.png  used on input line 7.
-(pdftex.def)             Requested size: 273.14923pt x 156.08763pt.
-) [4 <c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/figures/graph_q2.png>] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\question_3.tex
+Package pdftex.def Info: figures/graph_q2.png  used on input line 30.
+(pdftex.def)             Requested size: 364.19667pt x 208.11098pt.
+) [4 <c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/figures/graph_q2.png>] [5] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\question_3.tex
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 2.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
@@ -1438,7 +1438,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-[5]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
@@ -1463,12 +1463,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-(../Python/ode_solver.py
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 6.
- [6
+<figures/Q3_omega_q_plot.png, id=45, 722.7pt x 722.7pt>
+File: figures/Q3_omega_q_plot.png Graphic file (type png)
+<use figures/Q3_omega_q_plot.png>
+Package pdftex.def Info: figures/Q3_omega_q_plot.png  used on input line 102.
+(pdftex.def)             Requested size: 318.66948pt x 318.67268pt.
 
-]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 107--52
+
+ []
+
+[7
+
+] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\conclusion.tex) [8 <c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/figures/Q3_omega_q_plot.png>] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.bbl
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 4.
+) [9] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\appendix.tex
+Overfull \hbox (50.98438pt too wide) detected at line 29
+[]
+ []
+
+[10] (../Python/ode_solver.py
 LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on input line 26.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/xcharter\ts1xcharter-tlf.fd"
 File: TS1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for TS1/XCharter-TLF.
@@ -1480,32 +1498,21 @@ Overfull \hbox (12.76065pt too wide) in paragraph at lines 40--41
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-)
-<figures/Q3_omega_q_plot.png, id=46, 722.7pt x 722.7pt>
-File: figures/Q3_omega_q_plot.png Graphic file (type png)
-<use figures/Q3_omega_q_plot.png>
-Package pdftex.def Info: figures/Q3_omega_q_plot.png  used on input line 107.
-(pdftex.def)             Requested size: 318.66948pt x 318.67268pt.
-) [7] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\conclusion.tex) [8 <c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/figures/Q3_omega_q_plot.png>] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.bbl) [9] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\appendix.tex
-Overfull \hbox (50.98438pt too wide) detected at line 29
-[]
- []
-
-[10]) [11] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.aux)
+)) [11] (c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30846 strings out of 492449
- 572754 string characters out of 3129676
- 755665 words of memory out of 3000000
- 34735 multiletter control sequences out of 15000+200000
+ 30847 strings out of 492449
+ 572766 string characters out of 3129676
+ 767665 words of memory out of 3000000
+ 34736 multiletter control sequences out of 15000+200000
  593396 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,10n,79p,952b,1887s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,14n,79p,952b,1578s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_q7u3cc.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (13 pages, 704818 bytes).
+Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (13 pages, 700303 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

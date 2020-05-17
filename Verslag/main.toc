@@ -2,11 +2,12 @@
 \contentsline {section}{\numberline {1}Introduction}{1}% 
 \contentsline {section}{\numberline {2}question 1}{2}% 
 \contentsline {section}{\numberline {3}question 2}{4}% 
-\contentsline {section}{\numberline {4}question 3}{5}% 
-\contentsline {subsection}{\numberline {4.1}Analytical method}{5}% 
-\contentsline {subsection}{\numberline {4.2}Numerical method}{6}% 
+\contentsline {section}{\numberline {4}question 3}{6}% 
+\contentsline {subsection}{\numberline {4.1}Analytical method}{6}% 
+\contentsline {subsection}{\numberline {4.2}Numerical method}{7}% 
 \contentsline {section}{\numberline {5}conclusion}{8}% 
 \contentsline {section}{List of references}{9}% 
 \contentsline {section}{\numberline {6}Appendix}{10}% 
 \contentsline {subsection}{\numberline {6.1}Question 1}{10}% 
 \contentsline {subsubsection}{\numberline {6.1.1}Solving $Y(t)$}{10}% 
+\contentsline {subsection}{\numberline {6.2}Question 3}{11}% 
