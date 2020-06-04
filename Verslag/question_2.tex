@@ -28,7 +28,7 @@ We can plot graphs for the values $\omega T = 0.1$, $\omega T = 1$ and $\omega T
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/graph_q2.png}
-	\caption{Graphs of $x(t)$ and $F(t)$  as function of $t$ for different values of $Q$ and $T$. The solid blue lines correspond with $x(t)$ and the orange dashed lines correspond to a scaled version of $F(t)$.}
+	\caption{Graphs of $x(t)$ and $F(t)$  as function of $t$ for different values of $Q$ and $T$. The solid blue lines correspond with $x(t)$ and the orange dashed lines correspond to a scaled version of $F(t)$. The end of the excitation time $\omega T$ is denoted by the black dashed line. Both the dimensions of $\omega T$ and $\omega t$ are given in radians while $Q$ is still dimensionless.}
 	\label{fig_q1}
 \end{figure}
 
@@ -79,7 +79,7 @@ If we then substitute in these equations into the second order differential equa
 \end{align*}
 
 So that we now have the following system of of first-order linear differential equations:\\
-
+\vspace{-0.5cm}
 \begin{align}
     v'(t) &= 1/m\cdot F(t)-\omega/Q\cdot v(t)- \omega^2\cdot u(t)\\
     u'(t) &= v(t)
@@ -91,7 +91,7 @@ This system can be easily solved numerically using the python code shown in the 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=.65\linewidth,keepaspectratio]{figures/Q3_omega_q_plot.png}
-    \caption{The resulting oscillations for a parabolic force modulation. Here the displacement of the mass is plotted as a solid line and the force is plotted as the dashed line. The force is the same in all graphs but is scaled to emphasise the form. }
+    \caption{The resulting oscillations for a parabolic force modulation. Here the displacement of the mass is plotted as a solid line and the force is plotted as the dashed coloured line. The force is the same in all graphs but is scaled to emphasise the form. The end of the excitation time $\omega T$ is denoted by the black dashed line. Both the dimensions of $\omega T$ and $\omega t$ are given in radians while $Q$ is still dimensionless. }
     \label{fig:fig_Q3}
 \end{figure}
 

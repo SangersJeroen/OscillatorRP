@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  17 MAY 2020 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  4 JUN 2020 15:09
 entering extended mode
 **c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
 (c:/Users/Gebruiker/Documents/OscillatorRP/Verslag/main.tex
@@ -1462,21 +1462,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
 [5]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-<figures/Q3_omega_q_plot.png, id=44, 722.7pt x 722.7pt>
+<figures/Q3_omega_q_plot.png, id=44, 890.82813pt x 846.66313pt>
 File: figures/Q3_omega_q_plot.png Graphic file (type png)
 <use figures/Q3_omega_q_plot.png>
 Package pdftex.def Info: figures/Q3_omega_q_plot.png  used on input line 93.
-(pdftex.def)             Requested size: 295.90588pt x 295.9009pt.
+(pdftex.def)             Requested size: 295.90588pt x 281.23419pt.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 98--50
 
@@ -1543,7 +1538,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  76i,14n,79p,952b,1578s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_q7u3cc.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (12 pages, 745466 bytes).
+Output written on c:/Users\Gebruiker\Documents\OscillatorRP\Verslag\main.pdf (12 pages, 755061 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -35,13 +35,13 @@ def force(t):
 
 def f(t,Q,F_0,x_0,dx_0):
     D = (w/Q)**2 - 4*w**2
-    
+
     r_1 = 1/2*(-w/Q-D**(0.5))
     r_2 = 1/2*(-w/Q+D**(0.5))
 
     c_1 = 1/(r_2 - r_1)*(-dx_0 + F_0 * Q/(w*m) + x_0*(2*r_2-r_1))
     c_2 = 1/(r_2 - r_1)*(dx_0 - F_0 * Q/(w*m) -x_0*r_2)
-    
+
     x = c_1* np.exp(r_1*t) + c_2 * np.exp(r_2*t) + F_0*Q/(w**2*m)*np.sin(w*t)
     dx = c_1*r_1*np.exp(r_1*t) + c_2 *r_2* np.exp(r_2*t) + F_0*Q/(w*m)*np.cos(w*t)
     return [x,dx]
@@ -73,23 +73,23 @@ force_scale = np.array([[1e-3,1e-3,1e1],[1e-2,1e-2,1e1],[1e-2,1e-1,1e2]])
 
 for i in range(len(T)):
     for j in range(len(Q)):
-        
+
         x_0_i = f(T[i],Q[j],F_0,x_0,dx_0)[0]
         dx_0_i = f(T[i],Q[j],F_0,x_0,dx_0)[1]
-        
+
         t_critical[i,j] = next(k for k,n in enumerate(t_q2[i,j,:]) if n >T[i])
         t_i = int(t_critical[i,j])
 
         x_2_driven = f(t_q2[i,j,:t_i],Q[j],F_0,x_0,dx_0)[0]
         x_2_free = f((t_q2[i,j,t_i:]-T[i]),Q[j],0,x_0_i,dx_0_i)[0]
-        
+
         x_2[i,j,:t_i] = x_2_driven
         x_2[i,j,t_i:] = x_2_free
-        
+
         force_plot[i,j,:t_i] = force(t_q2[i,j,:t_i])*force_scale[i,j]
         force_plot[i,j,t_i:] = t_q2[i,j,t_i:] * 0
-        
-    
+
+
 
 
 fig, ax = plt.subplots(3,1, sharex=True)
@@ -98,8 +98,8 @@ fig.set_size_inches(12, 6)
 ax[-1].set_xlabel(' ', color=(0, 0, 0, 0))
 ax[-1].set_ylabel('\n ', color=(0, 0, 0, 0))
 #
-fig.text(0.55, 0.04, '$\omega \cdot t  \; \; [rad/2 \pi] \; \; \; \u2192$', va='center', ha='center')
-fig.text(0.02, 0.5, '$Displacement \; [m] \; \; \; \u2192 $', va='center', ha='center', rotation='vertical')
+fig.text(0.55, 0.04, '$\omega \cdot t/2 \pi$ [rad]', va='center', ha='center')
+fig.text(0.02, 0.5, '$Displacement$ [m]', va='center', ha='center', rotation='vertical')
 
 for i in range(len(Q)):
     ax[i].plot(t_q1[i,:],x_1[i,:])
@@ -107,22 +107,22 @@ for i in range(len(Q)):
     ax[i].ticklabel_format(axis='y', style='sci', scilimits=(-1,1))
     ax[i].yaxis.major.formatter._useMathText = True
     ax[i].margins(x=0)
-    
-    
 
-ax[0].set_title('$Q = 1$')
+
+
+ax[0].set_title('$Q = 1$ [-]')
 
 #ax[1].set_yticks([-0.6-0.2,0,0.2])
-ax[1].set_title('$Q \; \u2192 \; \infty $')
+ax[1].set_title('$Q \; \u2192 \; \infty$ [-]')
 
-ax[2].set_title('$Q = -1$')
+ax[2].set_title('$Q = -1$ [-]')
 ax[2].set_yscale('symlog')
 ax[2].set_yticks([-1e8,-1e4,0,1e4,1e8])
 
 
 fig.tight_layout()
 
-plt.savefig(r'C:\Users\vanlo\Documents\GitHub\OscillatorRP\Verslag\figures\graph_q1.png', dpi=100)
+plt.savefig('graph_q1.png', dpi=100)
 plt.show()
 
 
@@ -131,15 +131,15 @@ plt.show()
 fig, ax = plt.subplots(3,3,gridspec_kw={'width_ratios': [1.5,2,2]}, sharex='col')
 fig.set_size_inches(14, 8)
 
-ax[0,0].set_title('$Q = 1  $ \n')
-ax[0,1].set_title('$Q \; \u2192 \; \infty  $ \n ')
-ax[0,2].set_title('$Q = -1  $ \n ')
+ax[0,0].set_title('$Q = 1$ [-]  \n')
+ax[0,1].set_title('$Q \; \u2192 \; \infty$  [-] \n ')
+ax[0,2].set_title('$Q = -1 $ [-] \n ')
 
-ax[0,0].set_ylabel('\n \n $\omega T = 0.1$')
-ax[1,0].set_ylabel('\n \n $\omega T = 1$ \n ')
-ax[2,0].set_ylabel('\n \n $\omega T = 10$')
+ax[0,0].set_ylabel('\n \n $\omega T = 0.1 $ [rad]')
+ax[1,0].set_ylabel('\n \n $\omega T = 1 $ [rad] \n ')
+ax[2,0].set_ylabel('\n \n $\omega T = 10 $ [rad]')
 
-ax[2,1].set_xlabel('$\omega \cdot t  \; \; [rad/2 \pi]$')
+ax[2,1].set_xlabel('$\omega \cdot t/2 \pi  \; \;$ [rad]')
 
 
 fig.text(0.02, 0.45, '$Displacement \; [m] $', va='center', ha='center', rotation='vertical')
@@ -148,10 +148,11 @@ for i in range(len(T)):
     for j in range(len(Q)):
         ax[i,j].plot(t_q2[i,j,:],x_2[i,j,:])
         ax[i,j].plot(t_q2[i,j,:],force_plot[i,j,:], linestyle=':')
+        ax[i,j].axvline(T[i], linestyle="--", color="black", linewidth=1)
         ax[i,j].ticklabel_format(axis='y', style='sci', scilimits=(-1,1))
         ax[i,j].yaxis.major.formatter._useMathText = True
         ax[i,j].margins(x=0)
-        
+
 #        ax[i,0].set_ylabel('\n \n \n \n  \n \n ', color=(0, 0, 0, 0))
 #        ax[2,i].set_xlabel(' \n  \n  ', color=(0, 0, 0, 0))
 #        ax[0,i].set_title(' \n \n \n \n  ', color=(0, 0, 0, 0))
@@ -170,12 +171,12 @@ ax[2,2].set_yscale('symlog')
 ax[2,2].set_yticks([-1e6,-1e3, 0, 1e3, 1e6])
 
 plt.tight_layout()
-plt.savefig(r'C:\Users\vanlo\Documents\GitHub\OscillatorRP\Verslag\figures\graph_q2.png', dpi=100)
+plt.savefig('question_2.png', dpi=100)
 plt.show()
 
 
 
 
-    
+
 
 
